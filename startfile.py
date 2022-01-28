@@ -1,2 +1,10 @@
 phrase = "Hello World"
 print(phrase)
+print("---^---")
+print("---|---")
+print("---|---")
+print("---|---")
+print("---|---")
+print("---|---")
+print("---|---")
+print("-------")
