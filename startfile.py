@@ -1,6 +1,7 @@
 import testFile
 
 phrase = "Hello World"
+name = "Cam"
 print(phrase)
 print("---^---")
 print("---|---")
@@ -9,12 +10,13 @@ print("---|---")
 print("---|---")
 print("---|---")
 print("-------")
-print("Cam changed something!")
-
+print(name.replace("Cam", "Caleb and Cam") + " changed something!")
 if __name__ == "__main__":
     print("funee")
 
-    nums = [x for x in range(1, 20)]
+    x = 5
+
+    nums = [x for x in range(0, x)]
 
     print(nums)
-    testFile.Apple_bottom_jeans(5)
+    testFile.Apple_bottom_jeans(x)
