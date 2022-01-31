@@ -11,7 +11,9 @@ print("---|---")
 print("---|---")
 print("-------")
 print(name.replace("Cam", "Caleb and Cam") + " changed something!")
-if __name__ == "__main__":
+
+
+def main():
     print("funee")
 
     x = 5
@@ -20,3 +22,7 @@ if __name__ == "__main__":
 
     print(nums)
     testFile.Apple_bottom_jeans(x)
+
+# 'Main' function. Don't change or alter unless there's an issue.
+if __name__ == "__main__":
+    main()
