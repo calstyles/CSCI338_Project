@@ -1,8 +1,11 @@
 # CSCI338_Project
-## Image Recognition
+## Object Recognition
 
-For our project, we'll be working on an image recognition program using Machine learning. 
+This project takes images found in the UNCA CSCI textbook collection and allows a user to search for images based on user input such as, but not limited to, 
+"Find imagaes on... Bar graph, Line graph, Linked list etc"
 
-We will be using Python and **(insert python machine learning library here)**. 
 
-right now it's a mess but that's okay.
+Libraries to support machine learing will be considered soon.
+
+GUI is PyQt5/6.
+
