@@ -24,6 +24,7 @@ class LinesPiesBars(Dataset):
         elif (index < 11965):
             img_path = os.path.join(self.root_dir, f"GraphPie_{str(index)}.png")
             y_label = torch.tensor(2)
+        #if someone has another way to "read" an image, we don't have to use the scikit-image package
         image = io.imread(img_path)
         if self.transform:
             image = self.transform(image)
