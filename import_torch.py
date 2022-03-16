@@ -11,11 +11,17 @@ from torch.autograd import Variable
 import torchvision
 import pathlib
 
+
+#Future server will use GPU, to maximize features.
+
 # checking for device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
-# Transforms
 
+
+
+# We have transform for Vgg16
+# Transforms
 
 transformer = transforms.Compose([
     transforms.Resize((150, 150)),
@@ -33,6 +39,10 @@ transformer = transforms.Compose([
 # This is the dataset from the video, works on the online data sets
 # train_path='/Users/calebstyles/Desktop/python_projects/SE_test_program/seg_train/seg_train'
 # test_path='/Users/calebstyles/Desktop/python_projects/SE_test_program/seg_test/seg_test'
+
+
+
+# best batch size for vgg16?
 train_loader = DataLoader(
     torchvision.datasets.ImageFolder(train_path, transform=transformer),
     batch_size=64, shuffle=True
