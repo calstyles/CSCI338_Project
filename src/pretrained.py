@@ -23,6 +23,8 @@ if use_gpu:
 # Loading this dataset with pytorch is really easy using ImageFolder
 # as the labels are specified by the folders names.
 
+
+# THIS WILL BE YOUR OWN PATH TO THE DATA.
 data_dir = r'D:\School\SE\Group_Project\data'
 TRAIN = 'train'
 VAL = 'val'
