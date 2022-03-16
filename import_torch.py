@@ -15,6 +15,8 @@ import pathlib
 #Future server will use GPU, to maximize features.
 
 # checking for device
+
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
 
@@ -23,6 +25,8 @@ print(device)
 # We have transform for Vgg16
 # Transforms
 
+
+
 transformer = transforms.Compose([
     transforms.Resize((150, 150)),
     transforms.RandomHorizontalFlip(),
@@ -30,9 +34,15 @@ transformer = transforms.Compose([
     transforms.Normalize([0.5, 0.5, 0.5],  # 0-1 to [-1,1] , formula (x-mean)/std
                          [0.5, 0.5, 0.5])
 ])
+
+
+
+
 # Dataloader
 
 # Path for training and testing directory
+# if you have problems loading the directories make sure you link the base directory
+# and also you can use r in front of the string.
 # train_path='/Users/calebstyles/Desktop/linedata(1028)/line/images'
 # test_path='/Users/calebstyles/Downloads/line_graph_test'
 
@@ -43,6 +53,9 @@ transformer = transforms.Compose([
 
 
 # best batch size for vgg16?
+
+
+
 train_loader = DataLoader(
     torchvision.datasets.ImageFolder(train_path, transform=transformer),
     batch_size=64, shuffle=True
